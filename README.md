@@ -6,7 +6,7 @@ A modern, responsive React landing page for an AI-powered placement preparation 
 
 ## Live Demo
 
-https://your-vercel-link.vercel.app
+https://crack-the-campus-landing-page.vercel.app
 
 ---
 
