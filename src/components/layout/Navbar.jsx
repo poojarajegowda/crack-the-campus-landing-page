@@ -92,13 +92,13 @@ const Navbar = () => {
           <Container>
             <ul className="flex flex-col py-6 gap-5">
               {navigation.map((item) => (
-                <li key={item.id}>
+                <li key={item.href}>
                   <a
-                    href={item.href}
+                    href={`#${item.href}`}
                     onClick={() => setIsOpen(false)}
                     className="text-slate-700 font-medium dark:text-slate-200"
                   >
-                    {item.title}
+                    {item.label}
                   </a>
                 </li>
               ))}
