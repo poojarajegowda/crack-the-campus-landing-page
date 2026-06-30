@@ -1,1 +1,155 @@
-@import "tailwindcss";
+.logo-slider {
+  overflow: hidden;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: max-content;
+  animation: scroll-left 24s linear infinite;
+}
+
+.logo-slider.reverse .logo-track {
+  animation-direction: reverse;
+}
+
+.logo-card {
+  width: 220px;
+  height: 100px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.logo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
+}
+
+.logo-card img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-card:hover img {
+  transform: scale(1.08);
+}
+
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*------------------------Courses---------------------------*/
+
+.course-slider{
+    overflow:hidden;
+    width:100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.course-track{
+    display:flex;
+    width:max-content;
+    animation:courseMarquee 35s linear infinite;
+}
+
+.course-slider:hover .course-track{
+    animation-play-state:paused;
+}
+
+.course-item{
+    width:360px;
+    flex-shrink:0;
+    margin-right:24px;
+}
+
+@keyframes courseMarquee{
+
+from{
+    transform:translateX(0);
+}
+
+to{
+    transform:translateX(-50%);
+}
+
+}
+
+/*-------------------Testimonial----------------*/
+
+.testimonial-column {
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+
+  mask-image: linear-gradient(
+  to bottom,
+  transparent,
+  black 12%,
+  black 88%,
+  transparent
+);
+
+-webkit-mask-image: linear-gradient(
+  to bottom,
+  transparent,
+  black 12%,
+  black 88%,
+  transparent
+);
+}
+
+.testimonial-track {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  animation: scrollUp 24s linear infinite;
+}
+
+.down .testimonial-track {
+  animation: scrollDown 24s linear infinite;
+}
+
+.testimonial-column:hover .testimonial-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,16 +1,96 @@
-# React + Vite
+# 🎓 CrackTheCampus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive React.js landing page for an AI-powered placement preparation platform.
 
-Currently, two official plugins are available:
+Built as part of a frontend interview assignment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+(Add your Vercel link here)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Preview
+
+(Add screenshot here)
+
+---
+
+## ✨ Features
+
+- Responsive Landing Page
+- Hero Section
+- Feature Showcase
+- Animated Statistics
+- Infinite Company Logo Marquee
+- Infinite Course Marquee
+- Vertical Animated Testimonials
+- Smooth Hover Interactions
+- Professional Footer
+- Modern SaaS UI
+
+---
+
+## 🛠 Tech Stack
+
+React.js
+
+Vite
+
+Tailwind CSS
+
+Lucide React
+
+Framer Motion
+
+---
+
+## 📁 Folder Structure
+
+src/
+
+components/
+
+sections/
+
+ui/
+
+layout/
+
+data/
+
+assets/
+
+---
+
+## Installation
+
+git clone ...
+
+npm install
+
+npm run dev
+
+---
+
+## Build
+
+npm run build
+
+---
+
+## Deployment
+
+Vercel
+
+---
+
+## Author
+
+Pooja R
+
+LinkedIn
+
+GitHub
