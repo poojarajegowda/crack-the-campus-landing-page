@@ -91,6 +91,6 @@ Vercel
 
 Pooja R
 
-LinkedIn
+- LinkedIn: https://www.linkedin.com/in/pooja-rajegowda/
 
-GitHub
+- GitHub: https://github.com/poojarajegowda
