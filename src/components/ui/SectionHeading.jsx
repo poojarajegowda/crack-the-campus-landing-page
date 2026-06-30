@@ -8,11 +8,11 @@ const SectionHeading = ({ badge, title, subtitle }) => {
         </span>
       )}
 
-      <h2 className="mt-4 text-4xl font-bold text-slate-900">
+      <h2 className="mt-4 text-4xl font-bold text-slate-900 dark:text-white">
         {title}
       </h2>
 
-      <p className="mt-4 text-slate-600 leading-7">
+      <p className="mt-4 text-slate-600 leading-7 dark:text-slate-300">
         {subtitle}
       </p>
 

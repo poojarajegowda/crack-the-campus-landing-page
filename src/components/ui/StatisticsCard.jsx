@@ -8,6 +8,8 @@ const StatisticCard = ({ stat }) => {
       border
       border-slate-200
       bg-white
+      dark:border-slate-800
+      dark:bg-slate-900
       p-8
       transition-all
       duration-300
@@ -24,11 +26,11 @@ const StatisticCard = ({ stat }) => {
         <TrendingUp className="text-green-500" />
       </div>
 
-      <h4 className="mt-4 text-xl font-semibold text-slate-900">
+      <h4 className="mt-4 text-xl font-semibold text-slate-900 dark:text-white">
         {stat.title}
       </h4>
 
-      <p className="mt-3 text-slate-600">
+      <p className="mt-3 text-slate-600 dark:text-slate-300">
         {stat.description}
       </p>
 

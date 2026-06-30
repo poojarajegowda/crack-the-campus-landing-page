@@ -4,6 +4,7 @@ import Container from "../ui/Container";
 import Button from "../ui/Button";
 import { navigation } from "../constants/navigation";
 import useActiveSection from "../../hooks/useActiveSection";
+import ThemeToggle from "../ui/ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,11 @@ const Navbar = () => {
     right-0
     z-50
     bg-white/80
+    dark:bg-slate-900/80
     backdrop-blur-lg
     border-b
     border-slate-200/70
+    dark:border-slate-800/70
     transition-all
     duration-300
   "
@@ -31,7 +34,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2 cursor-pointer">
             <GraduationCap className="h-8 w-8 text-blue-600" />
             <div>
-              <h1 className="text-lg font-bold text-slate-900">
+              <h1 className="text-lg font-bold text-slate-900 dark:text-white">
                 CrackTheCampus
               </h1>
             </div>
@@ -46,7 +49,7 @@ const Navbar = () => {
       className={`relative px-2 py-1 font-medium transition-colors duration-300 ${
         activeSection === item.href
           ? "text-blue-600"
-          : "text-slate-700 hover:text-blue-600"
+          : "text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
       }`}
     >
       {item.label}
@@ -61,7 +64,8 @@ const Navbar = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <button className="text-slate-700 hover:text-blue-600 transition">
+            <ThemeToggle />
+            <button className="text-slate-700 hover:text-blue-600 transition dark:text-slate-200 dark:hover:text-blue-400">
               Sign In
             </button>
 
@@ -84,7 +88,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="lg:hidden border-t border-slate-200 bg-white">
+        <div className="lg:hidden border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
           <Container>
             <ul className="flex flex-col py-6 gap-5">
               {navigation.map((item) => (
@@ -92,7 +96,7 @@ const Navbar = () => {
                   <a
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-slate-700 font-medium"
+                    className="text-slate-700 font-medium dark:text-slate-200"
                   >
                     {item.title}
                   </a>

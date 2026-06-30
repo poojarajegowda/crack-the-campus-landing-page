@@ -11,6 +11,8 @@ const FeatureCard = ({ feature }) => {
         border
         border-slate-200
         bg-white
+        dark:border-slate-800
+        dark:bg-slate-900
         p-8
         transition-all
         duration-300
@@ -39,11 +41,11 @@ const FeatureCard = ({ feature }) => {
         <Icon size={28} />
       </div>
 
-      <h3 className="text-xl font-semibold text-slate-900">
+      <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
         {feature.title}
       </h3>
 
-      <p className="mt-4 leading-7 text-slate-600">
+      <p className="mt-4 leading-7 text-slate-600 dark:text-slate-300">
         {feature.description}
       </p>
 

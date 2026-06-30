@@ -12,7 +12,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="py-10 bg-slate-50 overflow-hidden"
+      className="py-10 bg-slate-50 overflow-hidden dark:bg-slate-900"
     >
       <Container>
 

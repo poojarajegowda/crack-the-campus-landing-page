@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 import Navbar from "./components/layout/Navbar";
 import Hero from './components/sections/Hero';
 import Companies from './components/sections/Companies';
@@ -13,6 +13,17 @@ import ScrollProgress from './components/ui/ScrollProgress';
 function App() {
   return (
     <>
+    <div
+  className="
+    min-h-screen
+    bg-white
+    text-slate-900
+    transition-colors
+    duration-300
+    dark:bg-slate-950
+    dark:text-white
+  "
+>
     <ScrollProgress />
       <Navbar />
       <Hero />
@@ -23,6 +34,7 @@ function App() {
       <Companies />
       <Footer />
       <BackToTop />
+      </div>
     </>
   );
 }

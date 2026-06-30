@@ -14,7 +14,7 @@ Built as part of a frontend interview assignment.
 
 ## 📸 Preview
 
-(Add screenshot here)
+ - public/preview/
 
 ---
 

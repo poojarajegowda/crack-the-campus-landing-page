@@ -3,7 +3,7 @@ import { firstRow, secondRow } from "../../data/companies";
 
 const Companies = () => {
   return (
-    <section id="companies" className="py-24 bg-white overflow-hidden">
+    <section id="companies" className="py-24 bg-white overflow-hidden dark:bg-slate-900">
 
       <Container>
 
@@ -13,11 +13,11 @@ const Companies = () => {
             Trusted Worldwide
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold">
+          <h2 className="mt-6 text-4xl font-bold dark:text-white">
             Trusted by Leading Companies
           </h2>
 
-          <p className="mt-4 text-slate-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-slate-600 max-w-3xl mx-auto dark:text-slate-300">
             Our learners have received opportunities from top product and
             service companies across the world.
           </p>

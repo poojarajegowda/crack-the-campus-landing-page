@@ -15,6 +15,8 @@ const CourseCard = ({ course }) => {
       border
       border-slate-200
       bg-white
+      dark:border-slate-800
+      dark:bg-slate-900
       p-8
       transition-all
       duration-300
@@ -27,15 +29,15 @@ const CourseCard = ({ course }) => {
         {course.badge}
       </span>
 
-      <h3 className="mt-6 text-2xl font-bold">
+      <h3 className="mt-6 text-2xl font-bold dark:text-white">
         {course.title}
       </h3>
 
-      <p className="mt-2 text-slate-500">
+      <p className="mt-2 text-slate-500 dark:text-slate-300">
         {course.level}
       </p>
 
-      <div className="mt-5 flex items-center gap-5 text-sm text-slate-600">
+      <div className="mt-5 flex items-center gap-5 text-sm text-slate-600 dark:text-slate-300">
         <div className="flex items-center gap-2">
           <Clock size={16} />
           {course.duration}

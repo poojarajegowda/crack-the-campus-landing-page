@@ -9,6 +9,8 @@ const TestimonialCard = ({ testimonial }) => {
       border
       border-slate-200
       bg-white
+      dark:border-slate-800
+      dark:bg-slate-900
       p-8
       transition-all
       duration-300
@@ -23,7 +25,7 @@ const TestimonialCard = ({ testimonial }) => {
       />
 
       {/* Review */}
-      <p className="mt-6 leading-7 text-slate-600">
+      <p className="mt-6 leading-7 text-slate-600 dark:text-slate-300">
         "{testimonial.review}"
       </p>
 
@@ -64,11 +66,11 @@ const TestimonialCard = ({ testimonial }) => {
           </div>
 
           <div>
-            <h3 className="font-semibold">
+            <h3 className="font-semibold dark:text-white">
               {testimonial.name}
             </h3>
 
-            <p className="text-sm text-slate-500">
+            <p className="text-sm text-slate-500 dark:text-slate-400">
               {testimonial.role} @ {testimonial.company}
             </p>
           </div>

@@ -7,7 +7,7 @@ const Statistics = () => {
   return (
     <section
       id="statistics"
-      className="bg-slate-50 py-10"
+      className="bg-slate-50 py-10 dark:bg-slate-900"
     >
       <Container>
 
