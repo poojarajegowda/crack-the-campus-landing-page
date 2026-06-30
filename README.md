@@ -95,6 +95,7 @@ Additional animations include:
 
 # Folder Structure
 
+```text
 src
 │
 ├── assets
@@ -135,6 +136,7 @@ src
 ├── App.jsx
 ├── main.jsx
 └── index.css
+```
 
 ---
 
