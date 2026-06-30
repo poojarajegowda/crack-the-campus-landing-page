@@ -8,13 +8,13 @@ Built as part of a frontend interview assignment.
 
 ## 🚀 Live Demo
 
-(Add your Vercel link here)
+https://crack-the-campus-landing-page.vercel.app/
 
 ---
 
 ## 📸 Preview
 
- - public/preview/
+public/preview/
 
 ---
 
